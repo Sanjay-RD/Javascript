@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Type Word</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Type Word</h1>
+	</header>
+
+	<div class="container">
+		<!-- word & Input -->
+		<div class="mx-auto">
+			<p class="lead">
+				Type The Given Word Within
+				<span class="text-success" id="seconds">5</span> Seconds:
+			</p>
+
+			<div class="level">
+				<label>Lavels </label>
+				<select id="select">
+					<option value="easy">Easy</option>
+					<option value="medium">Medium</option>
+					<option value="hard">Hard</option>
+				</select>
+			</div>
+			
+
+			<h2 id="current-word">hello</h2>
+			<input type="text" class="form-control" placeholder="Start typing..." id="word-input" autofocus>
+
+			<h4 id="message"></h4>
+
+			<!-- time and Score Column -->
+			<div class="row">
+				<div class="time">
+					<h3>
+						Time Left:
+						<span id="time">0</span>
+					</h3>
+				</div>
+				<div class="score">
+					<h3>
+						Score:
+						<span id="score">0</span>
+					</h3>
+				</div>
+			</div>
+
+
+
+			<div class="info">
+				<h4>Instruction</h4>
+				<p>Type each word in the given amount of seconds to score. To play again, just type the current word. your Score will reset</p>
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="main1.js"></script>
+</body>
+</html>

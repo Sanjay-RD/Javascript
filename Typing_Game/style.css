@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+body{
+	background-color: #010101c9;
+}
+
+header{
+	/*border: 1px solid #333;*/
+	padding: 15px 0 15px 0;
+	background-color:#888080;
+}
+header h1{
+	text-align: center;
+}
+
+.container{
+	margin: auto;
+	width: 70%;
+}
+
+.mx-auto{
+	margin-top:30px;
+	text-align: center;
+}
+
+.text-success{
+	color:#00fe00;
+}
+
+#current-word{
+	padding: 10px 0 15px 0;
+	font-size: 50px;
+}
+
+.form-control{
+	width:100%;
+	padding:6px 0 6px 10px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	color: #333;
+}
+
+.row{
+	padding: 20px 0 30px 0;
+}
+.time{
+	padding:0 0 5px 0;
+}
+
+.info{
+	background-color:#888080;
+	padding:14px; 
+}
+.info p{
+	margin-top:5px;
+}
+
+#message{
+	margin-top:20px;
+}
+
+.level{
+	margin-top:10px;
+	/*color: #333;*/
+}
+select{
+	color: #333;
+}
+option{
+	color: #333;
+}
