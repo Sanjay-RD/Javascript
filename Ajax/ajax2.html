@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ajax - internal json file</title>
+</head>
+<body>
+	<button id="btn1">user info</button>
+	<button id="btn2">users info</button>
+
+	<div id="user"></div>
+	<div id="users"></div>
+
+	<script type="text/javascript">
+		
+		document.getElementById('btn1').addEventListener('click',loadUser);
+		function loadUser(){
+			// console.log(1);
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET','user.json',true);
+			var output = '';
+			xhr.onload = function(){
+				if(this.status == 200){
+					var text = JSON.parse(this.responseText);
+					output += 
+					`<li>${text.id}</li>
+					<li>${text.name}</li>
+					<li>${text.email}</li>
+					`;
+				}
+				document.getElementById('user').innerHTML = output;
+			}
+
+			xhr.send();
+		}
+
+
+
+		document.getElementById('btn2').addEventListener('click',loadUsersText);
+		function loadUsersText(){
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET','users.json',true);
+			var output ='';
+			xhr.onload = function(){
+				if(this.status == 200){
+					var users = JSON.parse(this.responseText);
+					for(i=0;i<users.length;i++){
+						output +=
+						`
+							<li>Name:${users[i].name}</li>
+							<li>Name:${users[i].id}</li>
+							<li>Name:${users[i].email}</li>
+						`;
+					}
+
+					document.getElementById('users').innerHTML = output;
+				}
+			}
+
+			xhr.send();
+		}
+	</script>
+</body>
+</html>

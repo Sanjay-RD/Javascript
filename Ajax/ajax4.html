@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax - ajax with php</title>
+</head>
+<body>
+	<button id="button">click here</button>
+	<div id="output"></div>
+
+
+
+	<script type="text/javascript">
+		
+		document.getElementById('button').addEventListener('click',loadphp);
+
+		function loadphp(){
+			// console.log(1);
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET','processing.php?name=sanjay',true);
+
+			xhr.onload = function(){
+				console.log(this.responseText);
+			}
+
+			xhr.send();
+		}
+
+	</script>
+</body>
+</html>

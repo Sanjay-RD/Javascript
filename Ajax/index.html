@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax plane string request</title>
+</head>
+<body>
+	<button id="btn">Get Textfile</button>
+	<div id="text">
+		
+	</div>
+	<script type="text/javascript">
+		document.getElementById('btn').addEventListener('click',loadText);
+
+		function loadText(){
+			// console.log('clicked..');
+			// getting http request
+			var xhr = new XMLHttpRequest();
+			// console.log(xhr);
+
+			// open - type,file/url,syn
+			xhr.open('GET','sample.txt',true);
+
+			xhr.onload = function(){
+				if(this.status == 200){
+					console.log(this.responseText);
+				}else if(this.status = 404){
+					console.log('not found..');
+				}
+			}
+
+			xhr.send();
+		}
+	</script>
+</body>
+</html>
