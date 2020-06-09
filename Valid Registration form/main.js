@@ -31,7 +31,7 @@ function checkUsername(username,min,max){
 	if(username.value === ''){
 		showError(username,`${getFieldname(username)} is required`);
 	}else if(username.value.length < 3){
-		showError(username,`${getFieldname(username)} must have more than ${min} characters`);
+		showError(username,`${getFieldname(username)} must be atleast ${min} characters`);
 	}else if(username.value.length > 15){
 		showError(username,`${getFieldname(username)} is greater than ${max}`);
 	}else{
@@ -45,7 +45,7 @@ function checkPassword(password,min){
 	if(password.value === ''){
 		showError(password,`${getFieldname(password)} is required`);
 	}else if(password.value.length < 3){
-		showError(password,`${getFieldname(password)} must have more than ${min} characters`);
+		showError(password,`${getFieldname(password)} must be atleast ${min} characters`);
 	}else{
 		showSuccess(password);
 	}
