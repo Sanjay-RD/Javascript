@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Menu Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="profile.jpg" alt="">
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Protfolio</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <button class="toggle" id="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <h1>My Landing Page</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, nostrum!</p>
+
+        <button class="open" id="open"> 
+            Sign Up
+        </button>
+    </header>
+
+    <div class="container">
+        <h1>About My Protfolio</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, laborum.</p>
+        <h3>More About Me</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere praesentium eaque vero ipsa repudiandae vel est aspernatur, esse ex consequatur molestiae rem debitis quia fugiat cumque. Quaerat magni porro quas!</p>
+
+        <h3>Professional</h3>
+        <ul>
+            <li>Java</li>
+            <li>Front End Development</li>
+            <li>React</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, blanditiis dolore. Facere, perferendis inventore. Cumque possimus placeat veritatis nobis suscipit molestiae earum laudantium dolore, culpa natus, accusantium, dicta pariatur tempore ab? Quam deleniti sed commodi totam qui excepturi voluptas iure reprehenderit maxime incidunt? Quia reiciendis natus eaque, quod neque ab.</p>
+    </div>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close" id="close">
+                <i class="fa fa-times fa-2x"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+                <h3>Register With Us</h3>
+                <form id="form">
+                    <div>
+                        <label>Username</label>
+                        <input type="text" placeholder="Enter Name" id="username" class="input-field">
+                        <small>Required</small>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter Email" id="email" class="input-field">
+                        <small>Required</small>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter password" id="password" class="input-field">
+                        <small>Required</small>
+                    </div>
+                    <div>
+                        <label>Confirm-Password</label>
+                        <input type="password" placeholder="Enter confirm password" id="password2" class="input-field">
+                        <small>Required</small>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
