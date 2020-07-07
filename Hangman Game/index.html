@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hangman</h1>
+    <p>Find the Hidden word - Enter a letter</p>
+    
+    <div class="game-container">
+        <svg width="200" height="250" class="figure-container">
+            <!-- Rod -->
+            <line x1="60" y1="20" x2="140" y2="20" />
+            <line x1="140" y1="20" x2="140" y2="50" />
+            <line x1="60" y1="20" x2="60" y2="240" />
+            <line x1="20" y1="240" x2="110" y2="240" />
+            
+            <!-- head -->
+            <circle cx="140" cy="70" r="20" class="figure-part"></circle>
+
+            <!-- body -->
+            <line x1="140" y1="90" x2="140" y2="150" class="figure-part"></line>
+
+            <!-- arms -->
+            <line x1="160" y1="100" x2="140" y2="120" class="figure-part"></line>
+            <line x1="120" y1="100" x2="140" y2="120" class="figure-part"></line>
+
+            <!-- legs -->
+            <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+            <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+
+        </svg>
+
+        <div class="wrong" id="wrong">
+            <!-- <h3>Wrong</h3>
+            <span>r,t,u,i</span> -->
+        </div>
+
+        <div class="word" id="word">
+            <!-- <span class="letter">r</span>
+            <span class="letter">t</span>
+            <span class="letter">q</span>
+            <span class="letter">p</span> -->
+        </div>
+    
+        <div class="hints" id="hints">
+            <h4>Hints</h4>
+            <p id="hints-message">hints</p>
+        </div>
+    </div>
+
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="message"></h2>
+            <button id="play-again" class="btn">Play Again</button>
+        </div>
+    </div>
+
+    <div class="notification-contianer" id="notification-container">
+        <p>You Already have enter this letter</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
